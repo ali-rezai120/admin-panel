@@ -42,7 +42,6 @@ export default function Topbar() {
           /
         </kbd>
       </div>
-
       {/* Actions */}
       <div className="flex shrink-0 items-center gap-1 sm:gap-3">
         {/* Theme toggle */}
@@ -57,7 +56,6 @@ export default function Topbar() {
         >
           {theme === "light" ? <Moon size={21} /> : <Sun size={21} />}
         </button>
-
         {/* Notifications */}
         <div className="relative">
           <button
@@ -70,7 +68,6 @@ export default function Topbar() {
             <Bell size={21} />
             <span className="absolute right-2.5 top-2.5 h-2 w-2 rounded-full bg-red-500 ring-2 ring-white dark:ring-gray-900" />
           </button>
-
           {notificationsOpen && (
             <div className="absolute right-0 top-full z-50 mt-2 w-[min(18rem,calc(100vw-1.5rem))] rounded-xl border border-gray-200 bg-white p-4 shadow-xl dark:border-gray-700 dark:bg-gray-800">
               <h3 className="font-semibold text-gray-900 dark:text-white">
@@ -82,7 +79,6 @@ export default function Topbar() {
             </div>
           )}
         </div>
-
         {/* Admin Profile */}
         <div className="relative">
           <button
@@ -110,7 +106,6 @@ export default function Topbar() {
               }`}
             />
           </button>
-
           {profileOpen && (
             <div className="absolute right-0 top-full z-50 mt-2 w-[min(14rem,calc(100vw-1.5rem))] rounded-xl border border-gray-200 bg-white p-2 shadow-xl dark:border-gray-700 dark:bg-gray-800">
               <div className="border-b border-gray-100 px-3 py-3 dark:border-gray-700">
@@ -121,7 +116,6 @@ export default function Topbar() {
                   admin@example.com
                 </p>
               </div>
-
               <button
                 type="button"
                 onClick={() => setProfileOpen(false)}
@@ -130,7 +124,6 @@ export default function Topbar() {
                 <User size={17} />
                 My Profile
               </button>
-
               <button
                 type="button"
                 onClick={() => setProfileOpen(false)}
@@ -139,9 +132,7 @@ export default function Topbar() {
                 <Settings size={17} />
                 Account Settings
               </button>
-
               <div className="my-1 border-t border-gray-100 dark:border-gray-700" />
-
               <button
                 type="button"
                 onClick={() => setProfileOpen(false)}
